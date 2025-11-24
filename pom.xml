@@ -15,7 +15,7 @@
     <properties>
     	    
         <!-- Generic properties -->
-        <java.version>1.6</java.version>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         
@@ -382,14 +382,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.0</version>
+                <version>3.10.1</version>
                 <configuration>
-                    <compilerArguments>
-                        <Xlint/>
-                    </compilerArguments>
-                    <verbose>true</verbose>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
                     <showWarnings>true</showWarnings>
                 </configuration>
             </plugin>
